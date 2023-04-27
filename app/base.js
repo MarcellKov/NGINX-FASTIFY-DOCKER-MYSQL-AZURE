@@ -1,7 +1,7 @@
 import fast from "fastify"
 import {createConnection} from "mysql"
 
-const conn=createConnection({host:"mysql",port:"3306",database:"PROBA",user:"proba",password:"Matyas53",})
+const conn=createConnection({host:"mysql",port:"3306",database:"PROBA",user:"root",password:"Matyas53",})
 
 const app=fast()
 
