@@ -19,6 +19,8 @@ services:
         build: ./mysql
         command:
             - "--default-authentication-plugin=mysql_native_password"
+        
+            
         ports:
             - "3306:3306"
             - "33060:33060"
@@ -29,6 +31,21 @@ services:
              
         volumes:
             - mysql:/var/lib/mysql
+    
+    svelte:
+        image: kovacsmarcellsg/bemutato:svelte
+        restart: always
+        build: ./svelte
+        ports:
+            - "3000:3000"
             
+        command: ["yarn" ,"dev","--host","0.0.0.0"]
+        
+            
+
+    
+
+
+
 volumes:
     mysql: 
