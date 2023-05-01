@@ -1,9 +1,7 @@
 {
   "dependencies": {
+    "@fastify/cors": "^8.2.1",
     "fastify": "^4.15.0",
-    "mysql": "^2.18.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
-  },
-  "type": "module"
+    "mysql": "^2.18.1"
+  }
 }
