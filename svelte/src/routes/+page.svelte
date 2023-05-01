@@ -3,7 +3,7 @@
 
     //import axios from "axios"
     import { onMount } from "svelte";
-    onMount(function e(){axios.get("http://localhost:80/",{url:"http://localhost:80/"}).then(res=>{console.log(res)}).catch(err=>{console.log(err)})})
+    onMount(function e(){axios.get("http://20.215.145.154:8080/",{url:"http://20.215.145.154:8080/"}).then(res=>{console.log(res)}).catch(err=>{console.log(err)})})
 </script>
 
 <h1>WELCOMEa</h1>

@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "@azure/cosmos": "^3.17.3",
+    "@azure/identity": "^3.1.4",
     "@fastify/cors": "^8.2.1",
+    "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
     "mysql": "^2.18.1"
   }
