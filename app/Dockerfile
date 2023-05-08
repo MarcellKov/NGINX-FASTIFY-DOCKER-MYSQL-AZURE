@@ -13,10 +13,3 @@ RUN npm install
 
 
 COPY . .
-
-
-EXPOSE 8080
-
- 
-
-CMD ["node", "base.js","8080"]

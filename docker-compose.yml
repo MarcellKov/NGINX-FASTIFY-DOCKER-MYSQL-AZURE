@@ -1,14 +1,31 @@
 
 version: "3.8"
 services:
-    nodeserver:
+    nodeserver_8000:
         build:
             context: ./app
         ports:
-            - "8080:8080"
+            - "8000:8000"
+        
         expose:
-            - "8080"
-        image: kovacsmarcellsg/server:latest
+            - "8000"
+            
+        image: kovacsmarcellsg/server_8000:latest
+        command: node base.js 8000
+        
+    nodeserver_8001:
+        build:
+            context: ./app
+        ports:
+            - "8001:8001"
+        
+        expose:
+            - "8001"
+            
+        image: kovacsmarcellsg/server_8001:latest
+        command: node base.js 8001
+        
+    
     nginx:
         restart: always
         build:
@@ -16,6 +33,7 @@ services:
         ports:
             - "80:80"
         image: kovacsmarcellsg/nginx:latest
+
     mysql:
         image: kovacsmarcellsg/db:latest
         build: ./mysql
